@@ -17,21 +17,23 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.nameisjayant.jetpack_compose_projects_yt.screens.chatui.ui.ChatUIScreen
+import com.nameisjayant.jetpack_compose_projects_yt.screens.instagramHome.ui.InstagramHomeScreen
 import com.nameisjayant.jetpack_compose_projects_yt.ui.theme.JetpackComposeProjectsYTTheme
+import com.nameisjayant.jetpack_compose_projects_yt.ui.theme.gray_12
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge(
-            statusBarStyle = SystemBarStyle.auto(-1, -1),
-            navigationBarStyle = SystemBarStyle.auto(-1, -1)
+            statusBarStyle = SystemBarStyle.auto(gray_12.toArgb(), gray_12.toArgb()),
+            navigationBarStyle = SystemBarStyle.auto(gray_12.toArgb(), gray_12.toArgb())
         )
         setContent {
             JetpackComposeProjectsYTTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    ChatUIScreen(
+                    InstagramHomeScreen(
                         modifier = Modifier
-                            .background(Color.White)
+                            .background(gray_12)
                             .padding(innerPadding)
                     )
                 }

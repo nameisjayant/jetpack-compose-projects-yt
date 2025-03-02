@@ -28,3 +28,17 @@ val line_gradient = Brush.linearGradient(
 val photo_gradient = Brush.linearGradient(
     listOf(blue_19, blue_4c)
 )
+
+// instagram home colors
+val gray_12 = Color(0XFF121212)
+val gray_11 = Color(0XFF111113)
+val gray_f9 = Color(0XFFf9f9f9)
+val gray_54 = Color(0XFF545454)
+val blue_38 = Color(0XFF3897F0)
+val gray_99 = Color(0XFF999999)
+val story_gradient = Brush.linearGradient(
+    listOf(
+        Color(0XFFFBAA47), Color(0XFFD91A46), Color(0XFFA60F93)
+    )
+)
+
